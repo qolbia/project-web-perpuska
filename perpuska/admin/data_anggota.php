@@ -1,4 +1,4 @@
-<h4>Data Anggota</h4>
+<h4> Data Anggota</h4>
 <a href="?halaman=input_anggota" class="btn btn-secondary">
 + Tambah Data Anggota
 </a>
@@ -23,12 +23,12 @@ foreach($data as $anggota){ ?>
 <td><?= $anggota['nis'] ?></td>
 <td><?= $anggota['nama_anggota'] ?></td>
 <td><?= $anggota['username'] ?></td>
-<td><?= $anggota ['password'] ?></td>
+<td><?= $anggota['password'] ?></td>
 <td><?= $anggota['kelas'] ?></td>
 <td>
-<a class="btn btn-warning" href="?halaman=edit_anggota&id=<?=$anggota['id_anggota'] ?>"> Edit</a>
+<a class="btn btn-warning" href="?halaman=edit_anggota&id=<?= $anggota['id_anggota'] ?>"> Edit</a>
 <a class="btn btn-danger" onclick="return confirm('Yakin data dihapus')" href="?halaman hapus_anggota&id=<?=$anggota['id_anggota'] ?>">Hapus</a>
 </td>
 </tr>
-<?php }?>
+<?php } ?>
 </table>
